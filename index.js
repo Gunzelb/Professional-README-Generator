@@ -59,7 +59,7 @@ const questions = [
 ]
 
 inquirer.prompt(questions).then((answers) => {
-  fs.writeFile('README.md', `
+  fs.writeFile('./dist/README.md', `
   # ${answers.title}
   \n
   \n${answers.description}
